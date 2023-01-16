@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/globalStyles.css" />
+    <link rel="stylesheet" href="./pages/home/style.css" />
+    <link rel="stylesheet" href="./styles/buttons.css">
+    <script defer src="./pages/home/index.js"></script>
+    <link rel="stylesheet" href="./styles/input.css">
+    <link rel="stylesheet" href="./styles/modal.css">
+    <script defer src="./pages/home/mobile.js"></script>
+   <script defer src="./pages/home/modal.js"></script>
+    <script src="./script/database/posts.js"></script>
+    <script src="./script/database/sugestUsers.js"></script>
+    
+    <title>TechPosters - Home</title>
+  </head>
+
+  <body>
+    <div class="container">
+  
+      <header class="header-home-page">
+        <img class="logo" src="./assets/img/logo.svg">
+        <button class="button-log-out">sair</button>
+      </header>
+
+      <div class="modal1">
+        <div class="modal-box">
+          <div class="button"></div>
+          
+          <div class="person-identify">
+          
+            <img class="avatar-photo" src="./assets/img/user2.svg">
+            <div class="name-work-card">
+            
+              <h2 class="name-card">nome da pessoa</h3>
+              <p class="work-card">cargo</p>
+            
+            </div>
+          
+          </div>
+          <h2 class="modal-post-title">Título da postagem</h2>
+          <p class="modal-post-content">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam vero in consequatur pariatur labore eveniet fugiat. Dolorem corrupti quas alias debitis. Vel minima officia, reprehenderit incidunt nam facilis labore maxime.</p>
+          <div class="post-button-contador">
+
+            <button class="button-grey1 id2" >Fechar post</button>
+            <img class="heart-like-post" src="./assets/img/heartgrey.svg">
+            <p class="heart-counter"> 0</p>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="modal2">
+        <div class="modal-box">
+          <div class="person-identify">
+          
+            <img class="avatar-photo" src="./assets/img/user3.svg">
+            <div class="name-work-card">
+            
+              <h2 class="name-card">nome da pessoa</h3>
+              <p class="work-card">cargo</p>
+            
+            </div>
+          
+          </div>
+          <h2 class="modal-post-title">Título da postagem</h2>
+          <p class="modal-post-content">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam vero in consequatur pariatur labore eveniet fugiat. Dolorem corrupti quas alias debitis. Vel minima officia, reprehenderit incidunt nam facilis labore maxime.</p>
+          <div class="post-button-contador">
+
+            <button class="button-grey1 id4" >Fechar post</button>
+            <img class="heart-like-post" src="./assets/img/heartgrey.svg">
+            <p class="heart-counter"> 0</p>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="modal3">
+        <div class="modal-box">
+          <div class="person-identify">
+          
+            <img class="avatar-photo" src="./assets/img/user3.svg">
+            <div class="name-work-card">
+            
+              <h2 class="name-card">nome da pessoa</h3>
+              <p class="work-card">cargo</p>
+            
+            </div>
+          
+          </div>
+          <h2 class="modal-post-title">Título da postagem</h2>
+          <p class="modal-post-content">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam vero in consequatur pariatur labore eveniet fugiat. Dolorem corrupti quas alias debitis. Vel minima officia, reprehenderit incidunt nam facilis labore maxime.</p>
+          <div class="post-button-contador">
+
+            <button class="button-grey1 id6" >Fechar post</button>
+            <img class="heart-like-post" src="./assets/img/heartgrey.svg">
+            <p class="heart-counter"> 0</p>
+
+
+          </div>
+        </div>
+      </div>
+
+
+      <div class="home-all">
+
+        <main class="home-main">
+          
+          <section class="add-new-post">
+          
+            <div class="person-identify">
+          
+              <img class="avatar-photo" src="./assets/img/user1.svg">
+              <div class="name-work-card">
+            
+                <p class="name-card">Nome da pessoa</p>
+                <p class="work-card">Engenheiro de Software</p>
+            
+              </div>
+            </div>
+          
+            <input type="text" class="input-title-post" placeholder="Digite seu título">
+            <input type="text" class="input-text-post" placeholder="digite seu post">
+          
+            <button class="button-primary">Postar</button>
+          </section>
+
+          <h2 class="home-posts">Posts</h2>
+          
+          <ul class="home-post"> 
+          
+            <li class="post">
+              <div class="person-identify">
+            
+                <img class="avatar-photo" src="./assets/img/user2.svg">
+                <div class="name-work-card">
+              
+                  <h2 class="name-card">nome da pessoa</h3>
+                  <p class="work-card">cargo</p>
+              
+                </div>
+            
+              </div>
+              <h2 class="post-title">Título da postagem</h2>
+              <p class="post-content">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam vero in consequatur pariatur labore eveniet fugiat. Dolorem corrupti quas alias debitis. Vel minima officia, reprehenderit incidunt nam facilis labore maxime.</p>
+              <div class="post-button-contador">
+
+                <button class="button-grey1 id1">Abrir post</button>
+                <img class="heart-like-post" src="./assets/img/heartgrey.svg">
+                <p class="heart-counter"> 0</p>
+
+
+              </div>
+            </li>
+
+            <li class="post">
+              <div class="person-identify">
+            
+                <img class="avatar-photo" src="./assets/img/user3.svg">
+                <div class="name-work-card">
+              
+                  <h2 class="name-card">nome da pessoa</h3>
+                  <p class="work-card">cargo</p>
+              
+                </div>
+            
+              </div>
+              <h2 class="post-title">Título da postagem</h2>
+              <p class="post-content">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam vero in consequatur pariatur labore eveniet fugiat. Dolorem corrupti quas alias debitis. Vel minima officia, reprehenderit incidunt nam facilis labore maxime.</p>
+              <div class="post-button-contador">
+
+                <button class="button-grey1 id3">Abrir post</button>
+                <img class="heart-like-post" src="./assets/img/heartgrey.svg">
+                <p class="heart-counter">0</p>
+
+              </div>
+            </li>
+
+            <li class="post">
+              <div class="person-identify">
+            
+                <img class="avatar-photo" src="./assets/img/user2.svg">
+                <div class="name-work-card">
+              
+                  <h2 class="name-card">nome da pessoa</h3>
+                  <p class="work-card">cargo</p>
+              
+                </div>
+            
+              </div>
+              <h2 class="post-title">Título da postagem</h2>
+              <p class="post-content">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam vero in consequatur pariatur labore eveniet fugiat. Dolorem corrupti quas alias debitis. Vel minima officia, reprehenderit incidunt nam facilis labore maxime.</p>
+              <div class="post-button-contador">
+
+                <button class="button-grey1 id5">Abrir post</button>
+                <img class="heart-like-post" src="./assets/img/heartgrey.svg">
+                <p class="heart-counter"> 0</p>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </main>
+
+        <aside class="follow-aside"> 
+          <h3 class="h3-sugestions">Sugestões para você seguir</h3>
+          <ul class="persons-to-follow">
+            
+            <li class="list-person-follow">
+
+              <div class="card-aside-follow">
+                <div class="card-name-work">
+                  <img class="avatar-photo" src="./assets/img/user4.svg">
+                    <div class="name-work-card">
+      
+                      <h2 class="name-card">nome da pessoa</h3>
+                      <p class="work-card">cargo</p>
+              
+                    </div> 
+                </div>
+                  
+              <button class="button-outline-medium">seguir</button>
+            </li>
+
+            <li class="list-person-follow">
+              
+                <div class="card-aside-follow">
+                  <div class="card-name-work">
+                    <img class="avatar-photo" src="./assets/img/user4.svg">
+                    <div class="name-work-card">
+      
+                      <h2 class="name-card">nome da pessoa</h3>
+                      <p class="work-card">cargo</p>
+              
+                    </div> 
+                  </div>
+                  
+                <button class="button-outline-medium">seguir</button>
+            </li>
+
+            <li class="list-person-follow">
+             
+                <div class="card-aside-follow">
+                  <div class="card-name-work">
+                  <img class="avatar-photo" src="./assets/img/user4.svg">
+                    <div class="name-work-card">
+      
+                      <h2 class="name-card">nome da pessoa</h3>
+                      <p class="work-card">cargo</p>
+              
+                    </div> 
+                  </div>
+                  
+                <button class="button-outline-medium">seguir</button>
+            </li>
+
+            </ul>
+
+          </div>
+        </aside>
+      </div>
+
+      
+      
+      
+    </div>
+  </body>
+  
+</html>
